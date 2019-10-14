@@ -13,7 +13,7 @@ open class DataModel {
   var listPlayer: PlayersModel? = null
 
   @SerializedName("map")
-  var map: Any? = null
+  var map: Array<Array<Int>>? = null
 
   @SerializedName("bombs")
   var bombs: Any? = null

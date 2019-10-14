@@ -1,6 +1,7 @@
 package com.vllenin.socket
 
 import android.os.Bundle
+import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
 import com.vllenin.socket.model.MapInfo
 import com.vllenin.socket.model.SpoilsModel
@@ -12,7 +13,7 @@ import org.json.JSONObject
 class MainActivity : AppCompatActivity() {
 
   companion object {
-    const val GAME_ID = "04a4a558-5866-4626-b33c-0f6c59145488"
+    const val GAME_ID = "a79800f5-3f66-43e4-b189-e6b7a85f66be"
     const val PLAYER_ID_1 = "player1-xxx-xxx-xxx"
     const val PLAYER_ID_2 = "player2-xxx-xxx-xxx"
   }
@@ -111,5 +112,8 @@ class MainActivity : AppCompatActivity() {
         (mapInfo.mapInfo?.listSpoils as ArrayList<SpoilsModel>).add(spoils)
       }
     }
+
+    val listRows = jsonSpoils.split("[1")
+
   }
 }
